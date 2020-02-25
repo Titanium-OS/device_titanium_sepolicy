@@ -23,3 +23,6 @@ BOARD_SEPOLICY_DIRS += \
     device/titanium/sepolicy/common/dynamic \
     device/titanium/sepolicy/common/vendor
 endif
+
+# Selectively include legacy rules defined by the products
+-include device/xtended/sepolicy/legacy-common/sepolicy.mk
